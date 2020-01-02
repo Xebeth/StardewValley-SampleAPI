@@ -1,0 +1,56 @@
+[19:58:40 INFO  SMAPI] SMAPI 3.0.1 with Stardew Valley 1.4.3 on Microsoft Windows 10 Pro
+[19:58:40 INFO  SMAPI] Mods go here: G:\Stardew Valley\Mods
+[19:58:40 TRACE SMAPI] Log started at 2020-01-02T18:58:40 UTC
+[19:58:40 INFO  SMAPI] You have SMAPI for developers, so the console will be much more verbose. You can disable developer mode by installing the non-developer version of SMAPI, or by editing G:\Stardew Valley\smapi-internal\config.json.
+[19:58:40 DEBUG SMAPI] Starting game...
+[19:58:43 TRACE SMAPI] Loading mod metadata...
+[19:58:43 TRACE SMAPI] Loading mods...
+[19:58:43 TRACE SMAPI]    ModUsingAPI (from Mods\ModUsingAPI\ModUsingAPI.dll)...
+[19:58:43 TRACE SMAPI]    ModWithAPI (from Mods\ModWithAPI\ModWithAPI.dll)...
+[19:58:43 INFO  SMAPI] Loaded 2 mods:
+[19:58:43 INFO  SMAPI]    ModUsingAPI 1.0.0 by Blackclaw | Mod using an API
+[19:58:43 INFO  SMAPI]    ModWithAPI 1.0.0 by Blackclaw | Mod with an API
+
+[19:58:43 INFO  SMAPI] Found 2 mods with warnings:
+[19:58:43 DEBUG SMAPI]    No update keys
+[19:58:43 DEBUG SMAPI]    --------------------------------------------------
+[19:58:43 DEBUG SMAPI]       These mods have no update keys in their manifest. SMAPI may not notify you about updates for these
+[19:58:43 DEBUG SMAPI]       mods. Consider notifying the mod authors about this problem.
+
+[19:58:43 DEBUG SMAPI]       - ModUsingAPI
+[19:58:43 DEBUG SMAPI]       - ModWithAPI
+
+[19:58:43 TRACE SMAPI]    Found mod-provided API (ModWithAPI.ModAPI).
+[19:58:43 TRACE SMAPI] Checking for updates...
+[19:58:43 TRACE game] setGameMode( 'titleScreenGameMode (0)' )
+[19:58:44 TRACE game] Steam logged on: True
+[19:58:44 TRACE game] Initializing GalaxySDK
+[19:58:44 TRACE SMAPI]    SMAPI okay.
+[19:58:44 TRACE SMAPI]    Checking for updates to 2 mods...
+[19:58:44 TRACE game] Requesting Steam app ticket
+[19:58:44 TRACE SMAPI]    All mods up to date.
+[19:58:44 TRACE SMAPI] Detecting common issues...
+[19:58:44 INFO  SMAPI] Type 'help' for help, or 'help <cmd>' for a command's usage
+[19:58:44 TRACE ModUsingAPI] Accessed mod-provided API for ModWithAPI.
+[19:58:44 ERROR ModUsingAPI] This mod failed in the GameLoop.GameLaunched event. Technical details: 
+Failed loading type 'StardewModdingAPI.Proxies.From<Blackclaw.ModUsingAPI_ModUsingAPI.IModAPI>_To<Blackclaw.ModWithAPI_ModWithAPI.ModAPI>': System.TypeLoadException: Method 'GetThing' in type 'StardewModdingAPI.Proxies.From<Blackclaw.ModUsingAPI_ModUsingAPI.IModAPI>_To<Blackclaw.ModWithAPI_ModWithAPI.ModAPI>' from assembly 'StardewModdingAPI.Proxies, Version=3.0.1.0, Culture=neutral, PublicKeyToken=null' does not have an implementation.
+   at System.Reflection.Emit.TypeBuilder.TermCreateClass(RuntimeModule module, Int32 tk, ObjectHandleOnStack type)
+   at System.Reflection.Emit.TypeBuilder.CreateTypeNoLock()
+   at System.Reflection.Emit.TypeBuilder.CreateType()
+   at StardewModdingAPI.Framework.Reflection.InterfaceProxyBuilder..ctor(String name, ModuleBuilder moduleBuilder, Type interfaceType, Type targetType) in U:\~dev\csharp\SMAPI-3.0.1\src\SMAPI\Framework\Reflection\InterfaceProxyBuilder.cs:line 70
+   at StardewModdingAPI.Framework.Reflection.InterfaceProxyFactory.CreateProxy[TInterface](Object instance, String sourceModID, String targetModID) in U:\~dev\csharp\SMAPI-3.0.1\src\SMAPI\Framework\Reflection\InterfaceProxyFactory.cs:line 50
+   at StardewModdingAPI.Framework.ModHelpers.ModRegistryHelper.GetApi[TInterface](String uniqueID) in U:\~dev\csharp\SMAPI-3.0.1\src\SMAPI\Framework\ModHelpers\ModRegistryHelper.cs:line 104
+   at ModUsingAPI.ModUsingAPI.<>c__DisplayClass0_0.<Entry>b__0(Object sender, GameLaunchedEventArgs args) in U:\~dev\csharp\APISample\ModUsingAPI\ModUsingAPI.cs:line 22
+   at StardewModdingAPI.Framework.Events.ManagedEvent`1.Raise(TEventArgs args) in U:\~dev\csharp\SMAPI-3.0.1\src\SMAPI\Framework\Events\ManagedEvent.cs:line 88
+[19:58:44 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:640 Y:372 Width:1280 Height:720}
+[19:58:44 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:2560 Height:1440}
+[19:58:44 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:0 Y:0 Width:2560 Height:1440}
+[19:58:44 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:640 Y:372 Width:1264 Height:681}
+[19:58:44 TRACE game] Window_ClientSizeChanged(); Window.ClientBounds={X:640 Y:372 Width:1280 Height:720}
+[19:58:44 TRACE game] Signing into GalaxySDK
+[19:58:45 TRACE game] Galaxy auth success
+[19:58:45 TRACE game] Galaxy signed in
+[19:58:45 TRACE game] Galaxy logged on
+[19:59:06 TRACE game] Disconnected: ClosedGame
+[19:59:06 TRACE SMAPI] Disposing...
+[19:59:06 TRACE SMAPI] Disposing the content coordinator. Content managers will no longer be usable after this point.
