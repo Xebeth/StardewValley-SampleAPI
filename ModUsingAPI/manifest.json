@@ -1,0 +1,14 @@
+{
+  "Name": "ModUsingAPI",
+  "Author": "Blackclaw",
+  "Version": {
+    "MajorVersion": 1,
+    "MinorVersion": 0,
+    "PatchVersion": 0,
+    "Build": "0"
+  },
+  "UniqueID": "Blackclaw.ModUsingAPI",
+  "Description": "Mod using an API",
+  "PerSaveConfigs": false,
+  "EntryDll": "ModUsingAPI.dll"
+}
